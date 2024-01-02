@@ -1,2 +1,4 @@
 # Reggaeton_Recommender_System
-TBD 
+TBD
+
+Tried to work with tracks analysis but the output was too complicated to sort out.
