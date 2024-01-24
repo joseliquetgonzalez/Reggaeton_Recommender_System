@@ -54,8 +54,13 @@ Column breakdown of Seed_song_features_output.csv is as follows:
 - [x] Make GitHub repository
 - [x] Find and generate datasets
 - [x] Exploratory Data Analysis
-- [ ] Start clustering work between my songs and the dataset
+- [X] Start clustering work between my songs and the dataset
 - [ ] Try different distance methods and clustering algorithms
 - [ ] Finalize recommendation system
-- [ ] Deploy simple user-interface for recommendation system
+
+## Ideas 
+---
+
+- [ ] Build Streamlit App for users to add their songs
+- [ ] Write a blog post
 
