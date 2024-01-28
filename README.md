@@ -55,7 +55,7 @@ Column breakdown of Seed_song_features_output.csv is as follows:
 - [x] Find and generate datasets
 - [x] Exploratory Data Analysis
 - [X] Start clustering work between my songs and the dataset
-- [ ] Try different distance methods and clustering algorithms
+- [ ] Build K means model for clustering
 - [ ] Finalize recommendation system
 
 ## Ideas 
