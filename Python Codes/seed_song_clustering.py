@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 import pandas as pd
 
 # Assuming you have a DataFrame df containing your 50 favorite songs and API metadata
-df = pd.read_csv('Output/seed_song_features_output.csv')
+df = pd.read_csv('../Output/seed_song_features_output.csv')
 # Extract relevant features and create a feature matrix
 feature_columns = ['tempo', 'key', 'energy']  # Add more features as needed
 feature_matrix = df[feature_columns].values

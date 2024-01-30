@@ -64,7 +64,7 @@ def read_csv_and_extract_uris(file_path):
     return track_uris
 
 
-file_path = 'csv_files/Seed_song_list.csv'
+file_path = '../csv_files/Seed_song_list.csv'
 track_uris = read_csv_and_extract_uris(file_path)
 
 token = get_token()
