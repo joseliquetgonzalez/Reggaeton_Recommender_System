@@ -5,7 +5,7 @@
 ---
 This project will be my final output of my journey through the [BrainStation](https://brainstation.io/)'s Data Science program. My main goal with this project is to build a song recommending system using my favorite genre, Reggaetón, as seed.
 
-Currently, I have experienced that Spotify's recommending algorithm has become redundant: essentially pushing the same popular artists and songs, but nothing actually novel. My hope is to find a recommending system that picks songs of one liking and recommends similar songs that are novel, from small artists, and from a different genre altogether. In other words: I would love to have a recommender system that recommends you similar music but from outside of one's listening habits.
+Currently, Spotify's recommending algorithm has "stopped listening" to you. It has been noted [elsewhere](https://www.midiaresearch.com/blog/midias-2024-predictions-the-algorithm-is-not-listening) that the famous music-streaming platform has pivoted to push content that supports platform monetisation, rather than your specific listening niche. Anecdotally, I have experienced my recommendations gravitating toward the same popular artists and songs, but nothing actually novel. My hope is to build a song recommending system that uses my musical preferences and recommends me similar songs. Afterwards, I want to be able to modify the selection to get recommendations from content that is novel, from small artists, and from a different genre altogether. In 2024, as companies leave the highly specialized content side of business, smaller companies will need to step-up and fill this need.
 
 Although I am no expert, my aim with this project is to learn about recommendation systems and build one were I can find new songs that share song feature similarities with my selected Reggaetón songs. My ideal output are diverse songs that share sufficient similarities with Reggaetón without having to be exclusively Reggaetón. Furthermore, this code will be easily adaptable to other user's preferred music.
 
@@ -13,7 +13,7 @@ Although I am no expert, my aim with this project is to learn about recommendati
 ---
 The seed song list that I made from selected Reggaetón songs for this project can be downloaded [here](https://github.com/joseliquetgonzalez/Reggaeton_Recommender_System/blob/main/Seed_song_list.csv).
 
-As for the datasets to get songs recommended from, I used several public ones found in Kaggle: mainly the "[Spotify 1.2M+ Songs](https://www.kaggle.com/datasets/rodolfofigueroa/spotify-12m-songs)" and "[Spotify Dataset 1921-2020, 600k+ Tracks](https://www.kaggle.com/datasets/yamaerenay/spotify-dataset-19212020-600k-tracks)", with occasional use of the "[Most Streamed Spotify Songs 2023](https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023?resource=download)" dataset
+As for the datasets to get songs recommended from, I used several public ones found in Kaggle: mainly the "[Spotify Dataset 1921-2020, 600k+ Tracks](https://www.kaggle.com/datasets/yamaerenay/spotify-dataset-19212020-600k-tracks)", with occasional use of the "[Most Streamed Spotify Songs 2023](https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023?resource=download)" dataset
 
 ## Data Breakdown
 ---
@@ -48,6 +48,15 @@ Column breakdown of Seed_song_features_output.csv is as follows:
 | 0     | 0.82         | 0.788  | 6   | -5.478   | 0    | 0.191       | 0.272        | 1.65e-06         | 0.0404   | 0.648   | 93.961 | audio_features | 0tDSgSmZsbxCkdkfUPjg59 | spotify:track:0tDSgSmZsbxCkdkfUPjg59 | https://api.spotify.com/v1/tracks/0tDSgSmZsbxCkdkfUPjg59 | https://api.spotify.com/v1/audio-analysis/0tDSgSmZsbxCkdkfUPjg59 | 195573      | 4              |
 
 
+## Important Files and Notebooks 
+---
+
+- Notebooks/1-data_preprocessing.ipynb -> the file were I pre-process and prepare my data to be used throughout my project.
+- Notebooks/2-reggaeton_clustering.ipynb -> the file were I test different clustering algorithms and save the clustered datasets
+- Notebooks/3-Song_recommendation.ipynb -> the file were I tried different recommendation methods, and produced a playlists.
+- Notebooks/Capstone_EDA.ipynb -> the file were I made most of the Exploratory Data Analysis, and initial observation of reggaeton compared to other datasets.
+
+
 ## Steps to Complete 
 ---
 
@@ -55,8 +64,8 @@ Column breakdown of Seed_song_features_output.csv is as follows:
 - [x] Find and generate datasets
 - [x] Exploratory Data Analysis
 - [X] Start clustering work between my songs and the dataset
-- [ ] Build K means model for clustering
-- [ ] Finalize recommendation system
+- [X] Build K means model for clustering
+- [x] Finalize recommendation system
 
 ## Ideas 
 ---
